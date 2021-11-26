@@ -14,27 +14,21 @@
     align-items: flex-end;
     
     &::before {
-        content: 'Contacto';
+        content: 'Contact';
         position: absolute;
-        font-size: 80px;
-        opacity: .4;
+        font-size: 7vw;
+        opacity: .8;
+        color: var(--color-secondary)
     }
-    @include responsive(medium) {
+    @media(max-width: 767px) {
         &::before {
-            font-size: 60px;
-        }
-    }
-    @include responsive(small) {
-        font-size: 15px;
-        &::before {
-            bottom: 10px;
-            font-size: 40px;
+            font-size: 28px;
         }
     }
 }
 
 .copyright {
-    color: darken(#ffffff, 20);
+    color: var(--color-secondary); 
 }
 
 .particles {
@@ -67,4 +61,56 @@
 
 .error {
     background-color: rgb(255, 51, 51);
+}
+
+.w-45 {
+    width: 45%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-flex1 {
+    // flex: 1;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-header {
+    padding-top: var(--header-height);
+}
+
+.mt-50 {
+    margin-top: 60px;
+}
+.w-20 {
+    // width: 22%;
+}
+
+.arrow-scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-secondary);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &:hover {
+        background-color: rgb(61, 137, 250);
+    }
 }

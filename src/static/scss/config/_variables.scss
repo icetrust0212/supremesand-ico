@@ -1,6 +1,6 @@
 :root {
-    --color-main: #0E0524;
-    --color-main-dark: #110631;
+    --color-main: white;
+    --color-main-dark: rgba(241, 253, 255, 0.71);
     --color-secondary: #3F93F7;
     --color-body: linear-gradient(var(--color-main), var(--color-main-dark));
 
@@ -15,7 +15,13 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
-    
+    --text-color: #272727;
+    --primary-color: rgb(56, 182, 255);
+    --liquidity-pool: #172E5C;
+    --development: #00D6FF;
+    --presale: #0138A5;
+    --marketing: #C74DB7;
+    --partnerships: rgba(62, 192, 97);
 }
 
 $z-back: -10;
@@ -30,6 +36,6 @@ $breakpoints: (
     medium: 640px,
     large: 850px,
     xlarge: 1024px,
-    xxlarge: 1240px,
+    xxlarge: 1440px,
     xxxlarge: 1440px
 );

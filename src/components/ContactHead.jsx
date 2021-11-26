@@ -7,9 +7,9 @@ import address from '../static/images/contact-address.svg'
 const ContactHead = () => {
   return (
     <div className='contact-grid'>
-      <Icon description='+506 60727720' title='Telefono' image={phone} />
+      {/* <Icon description='+506 60727720' title='Telefono' image={phone} />
       <Icon description='gerencia@alysystem.com' title='Email' image={email} />
-      <Icon description='Edificio Escala Managua, Nicaragua' title='Direccion' image={address} />
+      <Icon description='Edificio Escala Managua, Nicaragua' title='Direccion' image={address} /> */}
     </div>
   )
 }

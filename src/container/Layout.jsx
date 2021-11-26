@@ -5,11 +5,13 @@ const Layout = ({ title, description, children }) => {
   return (
     <Fragment>
       <Helmet>
-        {title && <title> {title} - El mundo en tus manos </title>}
+        {title && <title> {title} - Supreme Sand </title>}
         {description && <mata name='description' content={description} />}
       </Helmet>
       <Fragment>
-        {children}
+        <div className="layout">
+          {children}
+        </div>
       </Fragment>
     </Fragment>
   )

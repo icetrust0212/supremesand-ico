@@ -16,6 +16,7 @@ const Navbar = () => {
         <Logo />
         <Toggle handlerToggle={handlerToggle} />
         <Nav handlerActive={toggle} />
+        <button className="buy">BUY NOW</button>
       </div>
     </header>
   )

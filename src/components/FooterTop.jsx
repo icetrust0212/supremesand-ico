@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import logo from '../static/images/logo-alysystem.png'
+import logo from '../static/images/site_logo.jpg'
 import List from './List'
 
 const FooterTop = () => {

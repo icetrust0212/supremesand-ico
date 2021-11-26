@@ -23,15 +23,9 @@
         outline: none;
         border: none;
         padding: 15px 20px;
-        background-color: rgb(12, 46, 114);
-        color: darken($color: #fff, $amount: 10);
+        box-shadow: inset 3px 3px 3px 3px #f1f1f1b0;
+        color: darken($color: rgb(10, 10, 10), $amount: 10);
         font-size: 15px;
-        &::placeholder {
-            color: darken($color: #fff, $amount: 10);
-        }
-        &:focus {
-            box-shadow: 0 1px 5px 2px var(--color-secondary);
-        }
     }
 
     &-submit {

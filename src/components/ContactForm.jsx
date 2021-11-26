@@ -9,7 +9,7 @@ class ContactForm extends Component {
       firstname: '',
       email: '',
       message: '',
-      sendText: 'Enviar mensaje',
+      sendText: 'Send Message',
       error: false
     }
     this.handlerChange = this.handlerChange.bind(this)
@@ -39,11 +39,11 @@ class ContactForm extends Component {
     } else if (this.state.message === '' && this.state.message === '') {
       return null
     } else {
-      this.setState({ sendText: 'Enviando mensaje...' })
+      this.setState({ sendText: 'Sending message...' })
       axios.post(url, requestApi)
         .then(response => {
-          if (response.data.success === 'send is Successfully') { this.setState({ sendText: 'Mensaje enviado' }) } else {
-            this.setState({ sendText: 'Mensaje no enviado', error: true })
+          if (response.data.success === 'send is Successfully') { this.setState({ sendText: 'Message Sent' }) } else {
+            this.setState({ sendText: 'Failed', error: true })
           }
         })
     }
@@ -55,7 +55,7 @@ class ContactForm extends Component {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Nombre'
+            placeholder='Name'
             className='form-input'
             value={this.state.name}
             onChange={this.handlerChange}
@@ -64,7 +64,7 @@ class ContactForm extends Component {
 
           <input
             type='email'
-            placeholder='Correo'
+            placeholder='Mail'
             className='form-input'
             value={this.state.email}
             onChange={this.handlerChange}
@@ -75,7 +75,7 @@ class ContactForm extends Component {
         <div className='form-group'>
           <textarea
             className='form-input form-area'
-            placeholder='Mensaje'
+            placeholder='Message'
             value={this.state.message}
             name='message'
             onChange={this.handlerChange}

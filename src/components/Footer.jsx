@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer className='l-footer'>
       <div className='global-max-content footer'>
-        <div className='footer-top'>
+        {/* <div className='footer-top'>
           <FooterTop />
-        </div>
+        </div> */}
         <CopyRight />
       </div>
     </footer>

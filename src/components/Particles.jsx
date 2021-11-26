@@ -12,7 +12,7 @@ const Particle = () => {
             },
             size: {
               value: 3
-            }
+            },
           },
           interactivity: {
             events: {
@@ -22,7 +22,11 @@ const Particle = () => {
               }
             }
           }
-        }} />
+        }} 
+        style={{
+          color: 'red'
+        }}
+        />
 
     </Fragment>
   )

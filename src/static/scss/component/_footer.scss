@@ -1,8 +1,6 @@
 .footer {
     height: 100%; 
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 70% 1fr;
     padding-left: 1rem;
     padding-right: 1rem;
 
@@ -26,6 +24,8 @@
 
     &-image {
         height: 130px;
+        border-radius: 50%;
+        overflow: hidden;
     }
 
     &-list {

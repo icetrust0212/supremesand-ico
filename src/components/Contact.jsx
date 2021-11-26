@@ -5,13 +5,13 @@ import Particles from './Particles'
 
 const Contact = () => {
   return (
-    <section className='l-section'>
-      <Particles />
+    <section className='l-section contact-us'>
       <div className='global-max-content contact'>
-        <h2 className='global-title'>Estar en contacto</h2>
+        <h2 className='global-title'></h2>
         <div className='contact-content'>
-          <ContactHead />
-          <ContactForm />
+          
+            <ContactHead />
+            <ContactForm />
         </div>
       </div>
     </section>
